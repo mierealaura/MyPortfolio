@@ -153,8 +153,8 @@ function onLinkClick() {
 
 window.onload = function() {
 
-  //index = 0;
-  //scrollToPage(index);
+  index = 0;
+  scrollToPage(index);
   checkWidth();
  //Get a reference to the link on the page
           // with an id of "mylink"
