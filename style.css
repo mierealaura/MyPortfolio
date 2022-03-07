@@ -31,7 +31,7 @@
     --downOffset:100%;
 }
 
-/* 
+
 body::-webkit-scrollbar-track {
     padding: 2px 0;
     background-color: #404040;
@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button{
     background-color: #292929;
     height: 0.5em;
-} */
+} 
 
 body{
     background-color: #161616;
