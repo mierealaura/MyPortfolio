@@ -258,10 +258,10 @@ section#AboutMe div#rightSide{
 div#ProfileContainer div#Me{
     border-radius: 1em;
     /* border: 1px solid red;   */
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), url("./Source/Self_02.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), url("./Source/Self_03.jpeg");
     /* background-image: url("./Source/Self_01.jpg"); */
     background-size:cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
