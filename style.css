@@ -1,0 +1,1193 @@
+@font-face {
+    font-family: Raleway;
+    src: url('./Fonts/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('./Fonts/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gentium-Basic;
+    src: url('./Fonts/GentiumBasic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gentium-Basic;
+    src: url('./Fonts/GentiumBasic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root{
+    --videoSize: 40%;
+    --downOffset:100%;
+}
+
+/* 
+body::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #404040;
+  }
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+  }
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow:  0 0px 30px rgba(0,0,0,1);
+    
+    background-color: #737272;
+  }
+
+body::-webkit-scrollbar-button{
+    background-color: #292929;
+    height: 0.5em;
+} */
+
+body{
+    background-color: #161616;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color:#161616;
+    color:white;
+    display: block;
+    position: relative;
+    width: 100%;
+    /* height:1vw; */
+    /* height:56.25vw; */
+    /* padding-bottom: 56.25%; */
+    /* display: block; */
+}
+
+
+h1{
+    position: absolute;
+    top:5%;
+    left: 10%;
+}
+
+/*******************************************************/
+/*********************** Standard **********************/
+/*******************************************************/
+.stdPage{
+    position: relative;
+    z-index: 1;
+}
+
+.leftSide{
+    /* border:1px solid rgb(255, 196, 0); */
+    position: absolute;
+    width: 30%;
+    height: 100%;
+}
+
+.rightSide{
+    position: absolute;
+    width:70%;
+    right:0;
+    top:0;
+    bottom:0;
+    min-height: 200px;
+
+    
+    z-index: -1;
+}
+
+.TitleBox{
+    /* border: 1px solid salmon; */
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height:90%;
+    top: 5%;
+    left:10%
+}
+
+.stdTitlePicture{
+    /* border: 1px solid crimson; */
+    border-radius: 1em;
+    background-image:  url("./Source/Placeholder.jpg");
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height:55%;
+}
+
+.stdHeader{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 3vw;
+    top:40%;
+    left:5%;
+    display: inline;
+    z-index: 2;
+    position: relative;
+}
+
+.stdSubheader{
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 2.5vw;
+    color:#b4b4b4;
+    top:40%;
+    left:5%;
+    display: inline;
+    z-index: 2;
+    position: relative;
+}
+
+.stdBody{
+    position: absolute;
+    width: 95%;
+    height: auto;
+    top:55%;
+    left: 2%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.15vw;
+    color: #CAE4E0;
+}
+
+.stdBold{
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.15vw;
+
+    color: #FFFFFF;
+}
+
+.software{
+    position: absolute;
+    top:90%;
+}
+
+nav{
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    width: 40%;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 80%); */
+    
+    z-index: 10;
+}
+
+ul{
+    background-color: #00000034;
+    border-radius: 2em;
+    padding: 0.7em 0.3em;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+li{
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+li a{
+    text-decoration:none;
+    color: rgb(197, 197, 197);
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+/*******************************************************/
+/******************** Slide: AboutMe *******************/
+/*******************************************************/
+section#AboutMe{
+    position: relative;
+    z-index: 1;
+}
+
+section#AboutMe div#leftSide{
+    position: relative;
+    width: 30%;
+    height:100%;
+}
+
+section#AboutMe div#leftSide div#ProfileContainer{
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height:90%;
+    top: 5%;
+    left:10%
+}
+
+section#AboutMe div#rightSide{
+    position: absolute;
+    width:70%;
+    right:0;
+    top:0;
+    bottom:0;
+    min-height: 200px;
+
+    background: linear-gradient(180deg, #00000000 20%, rgba(0, 0, 0, 1));
+    background-size: 100%; 
+    z-index: 1;
+}
+
+div#ProfileContainer div#Me{
+    border-radius: 1em;
+    /* border: 1px solid red;   */
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), url("./Source/Self_02.png");
+    /* background-image: url("./Source/Self_01.jpg"); */
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height:55%;
+}
+
+section#AboutMe h1{
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 3vw;
+    top:0;
+    transform: translateY(6em);
+    left:5%;
+    z-index: 2;
+    position: relative;
+
+}
+
+section#AboutMe h2{
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 2.5vw;
+    color:#b4b4b4;
+    display: inline-block;
+    top:0%;
+    transform: translateY(5.3em);
+    left:5%;
+    z-index: 2;
+    position: relative;
+}
+
+section#AboutMe b{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 3vw;
+    display: inline;
+    z-index: 2;
+    position: relative;
+}
+
+
+section#AboutMe p{
+    
+    position: absolute;
+    width: 95%;
+    height: auto;
+    top:55%;
+    left: 2%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    color: #b66849;
+}
+
+section#AboutMe p b{
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+
+    color: #e9b08f;
+}
+
+
+section#AboutMe div#rightSide div#content{
+    position: relative;
+    width: 90%;
+    height: 85%;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+}
+
+section#AboutMe div#rightSide p{
+    color: #b66849;
+    top:0;
+    width:45%;
+}
+
+/*******************************************************/
+/******************** Slide: Yara **********************/
+/*******************************************************/
+section#Yara{
+    background-color: #7E8C75;
+}
+
+section#Yara div#leftSide{
+    
+    position: absolute;
+    width: 30%;
+    height:100%;
+}
+
+section#Yara div#rightSide{
+    position: absolute;
+    width:70%;
+    height:100%;
+    left:30%;
+    z-index: 1;
+}
+
+section#Yara div#leftSide div{
+    /* border: 1px solid red; */
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height:90%;
+    top: 5%;
+    left:10%
+}
+
+section#Yara div#rightSide img{
+    width: 100%;
+    height:auto;
+    z-index: 1;
+}
+
+section#Yara h1{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 8vw;
+    
+    z-index: 2;
+    position: absolute;
+    top:21.5%;
+    left: 2%;
+}
+
+section#Yara h2{
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 2.85vw;
+    z-index: 2;
+    position: absolute;
+    top:45%;
+    left: 2%;
+}
+
+section#Yara img#profile{
+    z-index: 1;
+    position: relative;
+    
+    width: 100%;
+    
+}
+
+p{
+    position: relative;
+    width: 95%;
+    height: auto;
+    top:0;
+    left: 2%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+
+
+    color: #CAE4E0;
+}
+
+b{
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: bold;
+
+    color: #FFFFFF;
+}
+
+section#Yara div#upperGradient{
+    /* --upOffset:-100; */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 42.31%;
+    z-index: 0;
+
+    background: linear-gradient(180deg, #133727 0%, rgba(60, 115, 91, 0) 100%);
+    /* animation: 1.5s ease-out 0s 1 waitRight, 2s ease-out 1.5s 1 slideDown;  */
+    /* transform: translateY(var(--upOffset)+"%"); */
+}
+
+section#Yara div#lowerGradient{
+    /* --downOffset: 100%; */
+    position: absolute;
+    left: 31.67%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 0;
+    background: linear-gradient(0deg, rgba(26, 99, 77, 0.72) 0%, rgba(198, 255, 164, 0.31) 33.34%, rgba(126, 140, 117, 0) 65.62%);
+    /* transform: translateY(var(--downOffset)); */
+    
+}
+
+section#Yara .software{
+    /* display: inline; */
+    transform: translateY(3em);
+}
+
+/* 
+.upperGradientAnim{
+    animation: 1.5s ease-out 0s 1 waitDown, 2s ease-out 1.5s 1 slideDown; 
+}
+
+.lowerGradientAnim{
+    animation: 1.5s ease-out 0s 1 waitDown, 1s ease-out 1.5s 1 slideUp;
+} */
+
+@keyframes slideUp {
+    0%{
+        transform: translateY(100%);
+    }100%{
+        transform: translateY(0%);
+        --downOffset:"0%";
+    }
+}
+@keyframes waitLeft {
+    0%{
+        transform: translateX(-100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-200%);
+    }100%{
+        transform: translateX(0);
+    }
+}
+@keyframes waitDown {
+    0%{ 
+        transform: translateY(100%); 
+    }
+    100%{
+        transform: translateY(100%); 
+    }
+}
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100%);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
+/*******************************************************/
+/********************* The Altar ***********************/
+/*******************************************************/
+section#TheAltar{
+    background-color: #3C6C5D;
+}
+
+section#TheAltar div.leftSide{
+    position: absolute;
+    width: 70%;
+    left:0;
+    top:0;
+    bottom:0;
+    right:30%;
+    background-size: 100%; 
+    z-index: -1;
+    background: linear-gradient(180deg, #00000000 20%, rgba(0, 0, 0, 1));
+}
+
+section#TheAltar div.rightSide{
+    position: absolute;
+    width:30%;
+    height: 100%;
+    
+}
+
+section#TheAltar h1.stdHeader{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 3.8vw;
+
+    margin:0;
+    top:40%;
+    left:5%;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+section#TheAltar h2.stdSubheader{
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 2.3vw;
+    color:#b4b4b4;
+
+    left:5%;
+    display: inline;
+    z-index: 2;
+    position: relative;
+}
+
+section#TheAltar div.stdTitlePicture{
+    /* border: 1px solid crimson; */
+    border-radius: 1em;
+    background-image:  url("./Source/AltarProfile.png");
+    background-size:cover;
+    /* background-position: center; */
+    background-position: 0% 10%;
+    position: absolute;
+    width: 100%;
+    height:55%;
+}
+
+section#TheAltar p.stdBody{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top:55%;
+    left: 0%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.15vw;
+    color: #B8E4E4;
+}
+
+img#CompTA{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    /* pointer-events: none; */
+}
+
+section#TheAltar .software{
+    left: 0%;
+    transform: translateY(3em);
+}
+
+/*******************************************************/
+/*********************** VORTEX ************************/
+/*******************************************************/
+section#Vortex{
+    background-color: #2D2D2D;
+}
+
+section#Vortex div.leftSide{
+    position: absolute;
+    width: 40%;
+
+    z-index: -1;
+}
+
+section#Vortex div.TitleBox{
+    /* border: 1px solid salmon; */
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height:90%;
+    top: 5%;
+    left:10%
+}
+
+section#Vortex div.stdTitlePicture{
+    /* border: 1px solid crimson; */
+    border-radius: 1em;
+    background-image:  url("./Source/VortexProfile.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position: 0% 0%;
+    position: absolute;
+    width: 100%;
+    height:35.5%;
+}
+
+section#Vortex h1.stdHeader{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 7vw;
+
+    margin:0;
+    top:35%;
+    left:0%;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+section#Vortex h2.stdSubheader{
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 2.2vw;
+    color:#b4b4b4;
+    transform: translateY(-2.5em);
+
+    left:0%;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+}
+
+section#Vortex .rightSide{
+    position: absolute;
+    width:60%;
+    right:0;
+    top:0;
+    bottom:0;
+    min-height: 200px;
+
+    background-size: 100%; 
+    z-index: -1;
+    background: linear-gradient(180deg, #00000000 20%, rgba(0, 0, 0, 1));
+    
+}
+
+section#Vortex .stdBody{
+    position: absolute;
+    width: 73%;
+    height: auto;
+    top:55%;
+    left: 0%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    color: #D1D1D1;
+}
+
+section#Vortex .stdBold{
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+
+    color: #FFFFFF;
+}
+
+section#Vortex img#Pillar{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 15%;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    z-index: 4;
+
+}
+
+section#Vortex .software{
+    width: 100%;
+    left:0;
+    transform: translateY(2em);
+    color: #D1D1D1;
+    top:92%;
+}
+
+
+/*******************************************************/
+/******************** Karen & Flimsy *******************/
+/*******************************************************/
+
+section#Karen .stdTitlePicture{
+    /* border: 1px solid crimson; */
+    border-radius: 1em;
+    background-image: url("./Source/Karen_Profile.PNG"), linear-gradient(180deg, rgba(0, 0, 0, 0) 27.67%, rgba(0, 0, 0, 0.2) 100%);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position:50% 5%;
+    background-size: 90%, 100%;    
+    position: absolute;
+    width: 100%;
+    height:55%;
+}
+
+section#Karen{
+    background-color:#3D4655;
+    ;
+}
+
+section#Karen p{
+    color:#FFFFFF;
+
+}
+
+section#Karen img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+section#Karen .software{
+    width: 100%;
+    top: 97%;
+}
+
+
+/*******************************************************/
+/********************* 3D Practice *********************/
+/*******************************************************/
+
+section#Apples {
+    background: #537271;
+    
+}
+
+section#Apples .stdTitlePicture{
+    border-radius: 1em;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 100%), url("./Source/Apples_Profile.png");
+    background-size:cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-position:10% 0%;
+    /* background-size: 100%, 100%;     */
+    position: absolute;
+    width: 100%;
+    height:55%;
+}   
+
+section#Apples .stdHeader{
+    font-size: 5vw;
+    top:35%;
+    /* left:5%;
+    display: inline;
+    z-index: 2;
+    position: relative; */
+}
+
+section#Apples .stdSubheader{
+    font-size: 2.5vw;
+    color:#b4b4b4;
+    top:31%;
+    left:5%;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+section#Apples .stdBody{
+    width:100%;
+    color: #CAE4E0;
+    font-size: 1vw;
+}
+
+section#Apples .software{
+    transform: translateY(2em);
+    font-size: 1vw;
+}
+
+section#Apples .rightSide img{
+    background: linear-gradient(180deg, rgba(56, 81, 120, 0) 0%, rgba(0, 0, 0, 0) 0.01%, #335759 100%);
+}
+
+/*******************************************************/
+/*********************** ArtGame ***********************/
+/*******************************************************/
+
+section#ArtGame{
+    background-image: linear-gradient(180deg, rgba(23, 0, 41, 0.46) 0%, rgba(0, 153, 187, 0) 100%, rgba(23, 0, 41, 0) 100%), linear-gradient(0deg, #2B8D86, #2B8D86);
+    /* background: linear-gradient(0deg, #2B8D86, #2B8D86); */
+}
+
+section#ArtGame img#Flourishes{
+    position: absolute;
+    width: 30%;
+    z-index: 3;
+    top:43%;
+}
+
+section#ArtGame .stdTitlePicture{
+    border-radius: 1em;
+    background-image:  url("./Source/ArtGame_Profile.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%; 
+    height:55%;
+}
+
+section#ArtGame .rightSide{
+    background: linear-gradient(rgba(0, 153, 187, 0) 0%, rgba(23, 0, 41, 0.46)  100%);
+}
+
+section#ArtGame .stdHeader{
+    font-size: 3vw;
+    top:34%;
+    left:10%;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+section#ArtGame .stdSubheader{
+    font-size: 2.5vw;
+    color:#b4b4b4;
+    top: 28%;
+    left:10%;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+section#ArtGame .software{
+    top:95%;
+}
+
+/*******************************************************/
+/**************** Art Game Instructions ****************/
+/*******************************************************/
+
+
+section#ArtGameInstructions{
+    background: linear-gradient(180deg, rgba(31, 108, 105, 0) 0%, #192E4F 100%), linear-gradient(0deg, #298D88, #298D88);
+}
+
+section#ArtGameInstructions .rightSide{
+    background: linear-gradient(180deg, #1C405B 0%, #1B1B1B 80.21%);
+}
+
+
+img#CompAGI{
+    position: absolute;
+    top:-2.5%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    /* pointer-events: none; */
+}
+
+section#ArtGameInstructions div#textBox{
+    left:21.5%;
+    top:74%;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+
+    width: 58%;
+    height: 20%;
+    z-index: 5;
+}
+
+section#ArtGameInstructions h1#leftPart{
+    top: unset;
+    left: unset;
+    position: relative;
+    font-size: 1.4em;
+    text-align: right;
+}
+
+section#ArtGameInstructions h1#rightPart{
+    position: relative;
+    top: unset;
+    left: unset;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+section#ArtGameInstructions .TitleBox{
+
+    width: 85%;
+}
+
+section#ArtGameInstructions h1#textTitle{
+    display: block;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:2%;
+
+}
+
+section#ArtGameInstructions p{
+    top:4%;
+    color: #A3F0F0;
+    line-height: 1.2em;
+}
+
+/* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 */
+  /* filter: grayscale(100%); */
+
+section#ArtGameInstructions b#example{
+    font-family: Raleway;
+
+}
+
+section#ArtGameInstructions #symbols{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    bottom: 0;
+    left:6%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    z-index: 5;
+}
+
+
+/*******************************************************/
+/******************** Playing Cards ********************/
+/*******************************************************/
+
+section#PlayingCards1{
+    background-color: #787878;
+
+}
+
+section#PlayingCards1 div.rightSide{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(45, 39, 25, 0) 0.01%, rgba(24, 24, 24, 0.4) 100%);
+
+}
+
+section#PlayingCards1 p{
+    color: white;
+}
+
+section#PlayingCards1 .software{
+    top:95%;
+}
+
+section#PlayingCards1 .stdTitlePicture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 38%, #000000 100%), url("./Source/PlayingCards1_Profile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+section#PlayingCards1 p{
+    left:0%;
+    /* width: 100%; */
+}
+
+
+
+/*******************************************************/
+/******************** The Red Castle *******************/
+/*******************************************************/
+
+section#TheRedCastle{
+    background-color: #642323;
+}
+
+section#TheRedCastle div.rightSide{
+    background-size: 100%; 
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(55, 17, 26, 0) 0.01%, #2E040E 100%);
+}
+
+section#TheRedCastle div.stdTitlePicture{
+    background-image: url(./Source/CastleProfile.png);
+    background-size:cover;
+}
+
+#RedCastleVideo{
+    position: absolute;
+    top:5%;
+    left:12.5%;
+    width: 75%;
+    height: 51.5%;
+    z-index: 1;
+}
+
+img#CompTRC{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    /* pointer-events: none; */
+}
+
+img#lonelyPlanet{
+    position: absolute;
+    width: 5%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    left:27.5%;
+    top:38%;
+
+    z-index: 4;
+    pointer-events: none;
+    
+}
+
+section#TheRedCastle .stdBody{
+    position: absolute;
+    width: 95%;
+    height: auto;
+    top:55%;
+    left: 2%;
+    margin-top: 1em;
+
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    color: #EDCFB4;
+}
+
+section#TheRedCastle .stdBold{
+    font-family: Gentium-Basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+
+    color: #FFFFFF;
+}
+
+section#TheRedCastle .software{
+    width: 100%;
+    transform: translateY(2em);
+    color: #EDCFB4;
+}
+
+section#TheRedCastle .postScriptum{
+    color:#BFBFBF;
+
+    position: absolute;
+    top:97.5%;
+    display: inline;
+}
+
+
+/*******************************************************/
+/********************** Sharp Eyes *********************/
+/*******************************************************/
+
+section#SharpEyes{
+    background-color: #1D1D1D;
+    
+}
+
+section#SharpEyes .stdTitlePicture{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0) 55%, #000000 100%) ,url(./Source/Eyes_Overlay.gif), url(./Source/Eyes_Frame.png);
+    background-size: 100%, 90%, 100%;
+    background-position-y:center, 30%, center;
+    background-repeat: no-repeat;
+}
+
+section#SharpEyes .rightSide{
+    background: linear-gradient(rgba(0, 0, 0, 0) 14.9%, #000000 121.91%);
+    
+}
+
+section#SharpEyes .stdHeader{
+    top:38%;
+}
+
+section#SharpEyes .stdSubheader{
+    top:38%;
+}
+
+section#SharpEyes p{
+    color:#FC8D82;
+}
+
+section#SharpEyes .software{
+    top:93%;
+    width: 100%;
+}
+
+section#SharpEyes iframe#EyesAnim{
+    position: absolute;
+    top:5.9%;
+    left: 2%;
+    width: 55vw;
+    height:50vw;
+}
+
+/*******************************************************/
+/********************** Marine Life ********************/
+/*******************************************************/
+
+section#MarineLife{
+    background-color:#26255F;
+}
+
+section#MarineLife .stdTitlePicture{
+    background-image: linear-gradient(rgba(38, 26, 77, 0) 50%, #261A4D 100%), url(./Source/Marine_Profile.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position-y: center, 100%;
+}   
+
+section#MarineLife .software{
+    top:95%;
+}
+
+section#MarineLife .rightSide{
+    background: linear-gradient(rgba(38, 37, 95, 0) 0%, rgba(255, 0, 214, 0.1) 100%), url(./Source/Marine_Background.png);
+    background-size: cover;
+}
+
+/*******************************************************/
+/*********************** FamilyTree ********************/
+/*******************************************************/
+
+section#FamilyTree{
+    background-color:#172A32;
+}
+
+section#FamilyTree .software{
+    color: #E6E6E6;
+    top:95%;
+}
+
+section#FamilyTree .stdTitlePicture{
+    background: linear-gradient(180deg, rgba(35, 0, 0, 0) 48.02%, #170808 100%), url(./Source/FamilyTree_Profile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#FamilyTree .rightSide{
+    background: linear-gradient(180deg, rgba(50, 23, 23, 0) 24.95%, #240000 100%), url(./Source/Family_Background.png);
+    background-size: cover;
+}
+
+section#FamilyTree p{
+    color: white;
+}
+
