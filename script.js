@@ -241,17 +241,17 @@ window.onload = function() {
 
 }
 
-document.body.addEventListener('mouseup', nextPage, true); 
+//document.body.addEventListener('mouseup', nextPage, true); 
 
-function nextPage(){
-  if(index < slidePages.length - 1){
-    index++;
-    scrollToPage(index);
-  }else if(index >= slidePages.length - 1){
-    index = 0;
-    scrollToPage(index);
-  }
-}
+// function nextPage(){
+//   if(index < slidePages.length - 1){
+//     index++;
+//     scrollToPage(index);
+//   }else if(index >= slidePages.length - 1){
+//     index = 0;
+//     scrollToPage(index);
+//   }
+// }
 
 
 
