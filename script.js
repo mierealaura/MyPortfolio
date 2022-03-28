@@ -75,7 +75,7 @@ function checkWidth(){
 
 document.addEventListener("keydown", function(event) {
 
-    if ((!isScrolling) && (event.code == "ArrowLeft" ||  event.code == "ArrowUp" )) /*left arrow*/ {
+    if ((!isScrolling) && (event.code == "ArrowLeft" )) /*left arrow*/ {
         if(index > 0){
             index--;
             scrollToPage(index);
@@ -84,7 +84,7 @@ document.addEventListener("keydown", function(event) {
             scrollToPage(index);
         }
     }
-    if ((!isScrolling) && (event.code == "ArrowRight" || event.code == "ArrowDown" || event.code == "Space")) /*right arrow*/ {
+    if ((!isScrolling) && (event.code == "ArrowRight")) /*right arrow*/ {
         if(index < slidePages.length - 1){
           index++;
           scrollToPage(index);
@@ -92,6 +92,7 @@ document.addEventListener("keydown", function(event) {
           index = 0;
           scrollToPage(index);
         }
+
     }
 
     //animateLowGradient();
