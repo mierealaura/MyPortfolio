@@ -105,26 +105,26 @@ var slidePages = document.querySelectorAll("body > div > section");
 
 
 function scrollToPage(ind){
-    var navBar = document.getElementsByTagName("nav");
-    var listElement = document.getElementById(ind + 1);
-    var allLinks = document.getElementsByTagName("a");
-    if(ind === 2){
-      navBar[0].style.removeProperty("right");
-      navBar[0].style.left = "1%";
+//     var navBar = document.getElementsByTagName("nav");
+//     var listElement = document.getElementById(ind + 1);
+//     var allLinks = document.getElementsByTagName("a");
+//     if(ind === 2){
+//       navBar[0].style.removeProperty("right");
+//       navBar[0].style.left = "1%";
 
       // navBar[0].style.backgroundColor = "red";
-    }else{
-      navBar[0].style.removeProperty("left");
-      navBar[0].style.right = "1%";
-    }
-    for(let i = 0; i < allLinks.length; i++){
-      allLinks[i].style.color = "rgb(197, 197, 197)";
-      allLinks[i].style.fontSize = "1.2vw";
-      allLinks[i].style.fontWeight = "300";
-    }
-    listElement.style.color = "white";
-    listElement.style.fontSize = "1.4vw";
-    listElement.style.fontWeight = "800";
+//     }else{
+//       navBar[0].style.removeProperty("left");
+//       navBar[0].style.right = "1%";
+//     }
+//     for(let i = 0; i < allLinks.length; i++){
+//       allLinks[i].style.color = "rgb(197, 197, 197)";
+//       allLinks[i].style.fontSize = "1.2vw";
+//       allLinks[i].style.fontWeight = "300";
+//     }
+//     listElement.style.color = "white";
+//     listElement.style.fontSize = "1.4vw";
+//     listElement.style.fontWeight = "800";
     slidePages[ind].scrollIntoView({behavior: "smooth", block: 'start'});
 }
 
@@ -158,85 +158,85 @@ window.onload = function() {
   checkWidth();
  //Get a reference to the link on the page
           // with an id of "mylink"
-          var a = document.getElementById("1");
-          var b = document.getElementById("2");
-          var c = document.getElementById("3");
-          var d = document.getElementById("4");
-          var e = document.getElementById("5");
-          var f = document.getElementById("6");
-          var g = document.getElementById("7");
-          var h = document.getElementById("8");
-          var i = document.getElementById("9");
-          var j = document.getElementById("10");
-          var k = document.getElementById("11");
-          var l = document.getElementById("12");
-          var m = document.getElementById("13");
+//           var a = document.getElementById("1");
+//           var b = document.getElementById("2");
+//           var c = document.getElementById("3");
+//           var d = document.getElementById("4");
+//           var e = document.getElementById("5");
+//           var f = document.getElementById("6");
+//           var g = document.getElementById("7");
+//           var h = document.getElementById("8");
+//           var i = document.getElementById("9");
+//           var j = document.getElementById("10");
+//           var k = document.getElementById("11");
+//           var l = document.getElementById("12");
+//           var m = document.getElementById("13");
 
-          a.onclick = function() {
-            index = 0;
-            scrollToPage(index);
-            return false;
-          }
-          b.onclick = function() {
-            index = 1;
-            scrollToPage(index);
-            return false;
-          }
-          c.onclick = function() {
-            index = 2;
-            scrollToPage(index);
-            return false;
-          }
-          d.onclick = function() {
-            index = 3;
-            scrollToPage(index);
-            return false;
-          }
-          e.onclick = function() {
-            index = 4;
-            scrollToPage(index);
-            return false;
-          }
-          f.onclick = function() {
-            index = 5;
-            scrollToPage(index);
-            return false;
-          }
-          g.onclick = function() {
-            index = 6;
-            scrollToPage(index);
-            return false;
-          }
-          h.onclick = function() {
-            index = 7;
-            scrollToPage(index);
-            return false;
-          }
-          i.onclick = function() {
-            index = 8;
-            scrollToPage(index);
-            return false;
-          }
-          j.onclick = function() {
-            index = 9;
-            scrollToPage(index);
-            return false;
-          }
-          k.onclick = function() {
-            index = 10;
-            scrollToPage(index);
-            return false;
-          }
-          l.onclick = function() {
-            index = 11;
-            scrollToPage(index);
-            return false;
-          }
-          m.onclick = function() {
-            index = 12;
-            scrollToPage(index);
-            return false;
-          }
+//           a.onclick = function() {
+//             index = 0;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           b.onclick = function() {
+//             index = 1;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           c.onclick = function() {
+//             index = 2;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           d.onclick = function() {
+//             index = 3;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           e.onclick = function() {
+//             index = 4;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           f.onclick = function() {
+//             index = 5;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           g.onclick = function() {
+//             index = 6;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           h.onclick = function() {
+//             index = 7;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           i.onclick = function() {
+//             index = 8;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           j.onclick = function() {
+//             index = 9;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           k.onclick = function() {
+//             index = 10;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           l.onclick = function() {
+//             index = 11;
+//             scrollToPage(index);
+//             return false;
+//           }
+//           m.onclick = function() {
+//             index = 12;
+//             scrollToPage(index);
+//             return false;
+//           }
 
 
 }
